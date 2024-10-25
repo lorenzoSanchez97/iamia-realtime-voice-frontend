@@ -13,7 +13,6 @@
     "@types/node": "^16.18.108",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
-    "concurrently": "^9.0.1",
     "dotenv": "^16.4.5",
     "leaflet": "^1.9.4",
     "react": "^18.3.1",
@@ -28,8 +27,7 @@
     "ws": "^8.18.0"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"node ./relay-server/index.js\"",
-    "dev": "concurrently \"react-scripts start\" \"nodemon ./relay-server/index.js\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
