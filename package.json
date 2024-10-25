@@ -28,7 +28,8 @@
     "ws": "^8.18.0"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"nodemon ./relay-server/index.js\"",
+    "start": "concurrently \"react-scripts start\" \"node ./relay-server/index.js\"",
+    "dev": "concurrently \"react-scripts start\" \"nodemon ./relay-server/index.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
