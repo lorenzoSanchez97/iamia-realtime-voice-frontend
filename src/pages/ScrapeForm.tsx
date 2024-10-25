@@ -19,7 +19,6 @@ export function ScrapeForm({ onScrapedContent }: ScrapeFormProps) {
 
   // Add url protocol if doesnt include
   const checkUrl = (url: string): string => {
-    console.log('se llamo check')
     const includesProtocol = url.includes('https://')
     if (!includesProtocol) {
       url = 'https://' + url;
@@ -43,7 +42,6 @@ export function ScrapeForm({ onScrapedContent }: ScrapeFormProps) {
 
       try {
         const response = await fetch(apiEndpoint);
-        console.log(response)
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
