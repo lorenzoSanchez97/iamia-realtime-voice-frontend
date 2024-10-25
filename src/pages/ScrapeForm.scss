@@ -1,0 +1,81 @@
+.form-container {
+  max-width: 600px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.url-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: 'Switzer', sans-serif;
+
+  &:focus {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  }
+
+  &::placeholder {
+    color: #a3a3a3;;
+  }
+}
+
+.submit-button {
+  min-height: 47px;
+  padding: 7px 15px;
+  font-size: 25px;
+  color: #a3a3a3;
+  background-color: #222222;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Switzer', sans-serif;
+
+
+  &:hover {
+    color: #EF1169;
+    transform: scale(1.04);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.144);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-left-color: #EF1169;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  color: white;
+  margin-top: 10px;
+}
+
+.instruction {
+  font-family: 'Switzer', sans-serif;
+  margin-top: 20px;
+  color: white;
+}
